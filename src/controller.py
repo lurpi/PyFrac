@@ -67,8 +67,8 @@ class Controller:
         self.stagnant_TS = None     # time step if the front is stagnant. It is increased exponentialy to avoid uneccessary small steps.
         self.perfData = []
         self.lastSavedFile = 0
-        self.lastSavedTime = np.NINF
-        self.lastPlotTime = np.NINF
+        self.lastSavedTime = -np.inf
+        self.lastPlotTime = -np.inf
         self.TmStpCount = 0
         self.chkPntReattmpts = 0    # the number of re-attempts done from the checkpoint. Simulation is declared failed after 5 attempts.
         self.TmStpReductions = 0    # the number of times the time step has been reattempted because the fracture it was advancing too more than two cells in a row

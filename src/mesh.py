@@ -215,7 +215,7 @@ class CartesianMesh:
         booleconnEdgesNodes = np.zeros([numberofedges, 1], dtype=int)  # Peruzzo 2019
         connEdgesNodes = np.empty([numberofedges, 2], dtype=int)  # Peruzzo 2019
         connElemEdges = np.empty([self.NumberOfElts, 4], dtype=int)  # Peruzzo 2019
-        connEdgesElem = np.full([numberofedges, 2], np.nan, dtype=np.int)  # Peruzzo 2019
+        connEdgesElem = np.full([numberofedges, 2], np.nan, dtype=np.int64)  # Peruzzo 2019
         connNodesEdges = np.full([self.NumberofNodes, 4], np.nan, dtype=int)  # Peruzzo 2019
         connNodesElem = np.full([self.NumberofNodes, 4], np.nan, dtype=int)  # Peruzzo 2019
         k = 0
